@@ -69,7 +69,7 @@ function showQuestion() {
 
 function resetState() {
     nextButton.style.display = "none";
-    heading.innerHTML = "Chinese Drinks Challenge"
+    heading.innerHTML = "Chinese Drinks Challenge 🍹🍹"
     while(answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
