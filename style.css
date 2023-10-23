@@ -50,10 +50,6 @@ body {
     transition: 0.3s;
 }
 
-.btn:hover {
-    background: #222;
-    color: #fff
-}
 
 #next-btn {
     background: #001e4d;
