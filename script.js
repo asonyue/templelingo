@@ -37,6 +37,7 @@ const questions = [
     }
 ];
 
+const heading = document.getElementById("bigTitle")
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -78,8 +79,10 @@ function selectAnswer(e) {
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
         selectedBtn.classList.add("correct");
+        heading.innerHTML = "Congratulations, CORRECT !!!"
     } else {
         selectedBtn.classList.add("incorrect");
+        heading.innerHTML = "Sorry, it is not correct !!!"
     }
     Array.from(answerButtons.children).forEach(button =>{
         if(button.dataset.correct === "true") {
